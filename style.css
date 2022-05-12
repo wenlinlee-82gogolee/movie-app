@@ -3,6 +3,7 @@
 :root {
   --primary-color: #00334e;
   --secondary-color: #145374;
+  --text: #e8f9fd;
 }
 * {
   margin: 0;
@@ -31,7 +32,7 @@ header {
   align-items: center;
 }
 .head h1 {
-  color: #f8f7de;
+  color: var(--text);
   font-size: 3rem;
   text-transform: uppercase;
   margin-top: 0.5rem;
@@ -47,7 +48,7 @@ header {
   font-family: inherit;
   font-size: 1.8rem;
   padding: 0.6rem 2rem;
-  color: #fff;
+  color: var(--text);
   text-align: center;
 }
 .search::placeholder {
@@ -79,7 +80,7 @@ main {
   width: 100%;
 }
 .movie-info {
-  color: #eee;
+  color: var(--text);
   display: flex;
   align-items: top;
   justify-content: space-between;
@@ -91,7 +92,6 @@ main {
   font-size: 1.5rem;
 }
 .movie-info span {
-  /* background-color: var(--primary-color); */
   padding: 0.2rem 0.8rem;
   border-radius: 1rem;
   font-weight: 700;
@@ -110,7 +110,7 @@ main {
 
 .overview {
   background-color: var(--secondary-color);
-  color: #fff;
+  color: var(--text);
   padding: 0.5rem 2rem;
   position: absolute;
   left: 0;

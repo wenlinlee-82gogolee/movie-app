@@ -1,4 +1,4 @@
-const key = '0ef38987e613b8c99e9da3f490c8fdf0&page=1';
+const key = '';
 const API_URL = `https://api.themoviedb.org/3/discover/movie?sort_by=popularity.desc&api_key=${key}&page=1`;
 const IMG_PATH = 'https://image.tmdb.org/t/p/w1280';
 const SEARCH_API = `https://api.themoviedb.org/3/search/movie?api_key=${key}&query="`;
@@ -25,19 +25,19 @@ function showMovies(movies) {
     const movieEl = document.createElement('div');
     movieEl.classList.add('movie');
     movieEl.innerHTML = `
-<img
-  src="${IMG_PATH + poster_path}"
-  alt="${title}"
-/>
-<div class="movie-info">
-  <h3>${title}</h3>
-  <span class="${getClassByRate(vote_average)}">${vote_average}</span>
-</div>
-<div class="overview">
+      <img
+        src="${IMG_PATH + poster_path}"
+        alt="${title}"
+      />
+      <div class="movie-info">
+        <h3>${title}</h3>
+        <span class="${getClassByRate(vote_average)}">${vote_average}</span>
+      </div>
+      <div class="overview">
 
-${overview}
-</div>
-`;
+      ${overview}
+      </div>
+      `;
 
     main.appendChild(movieEl);
   });
