@@ -37,6 +37,9 @@ function showMovies(movies) {
 
       ${overview}
       </div>
+      <div class="overview-mobile">
+        ${overview}
+      </div>
       `;
 
     main.appendChild(movieEl);
