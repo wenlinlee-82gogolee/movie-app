@@ -31,21 +31,18 @@ header {
   align-items: center;
 }
 .head h1 {
-  color: #F4E185;
+  color: #f8f7de;
   font-size: 3rem;
   text-transform: uppercase;
   margin-top: 0.5rem;
-  margin-bottom:2rem;
-  /* text-shadow: 1px 1px var(--secondary-color); */
-  text-shadow: 2px 2px 4px #000000;
-
+  margin-bottom: 2rem;
 }
-.header-svg{
-  margin-right:0.8rem;
+.header-svg {
+  margin-right: 0.8rem;
 }
 .search {
   background-color: var(--primary-color);
-  border: 2px solid var(--secondary-color)
+  border: none;
   border-radius: 2rem;
   font-family: inherit;
   font-size: 1.8rem;
@@ -72,6 +69,11 @@ main {
   position: relative;
   overflow: hidden;
   border-radius: 1rem;
+}
+@media (max-width: 447px) {
+  .movie {
+    width: 30rem;
+  }
 }
 .movie img {
   width: 100%;
@@ -108,7 +110,7 @@ main {
 
 .overview {
   background-color: var(--secondary-color);
-  color:#fff;
+  color: #fff;
   padding: 0.5rem 2rem;
   position: absolute;
   left: 0;
@@ -124,7 +126,7 @@ main {
   transform: translateY(0);
 }
 
-#main{
+#main {
   display: flex;
   justify-content: center;
 }
